@@ -1,0 +1,204 @@
+body{
+    font-family: arial;
+}
+p{    
+    font-size: 14px;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.625rem;
+
+}
+
+h4{
+    font-family: arial;
+}
+
+article{
+    width: 25%;
+}
+
+.f_line{
+    display: flex;
+}
+
+.sp{
+    padding-top: 1rem;
+}
+
+nav{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;    
+    height: 4rem;
+    width: 13rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+nav a:hover{
+    background-color: #404040;
+    color: #fff;    
+}
+
+nav a.active:hover,
+.active{
+    background-color: #fbce07;
+    color: black;
+}
+
+.out{
+    display: none;
+}
+
+.in{
+    display: block;
+}
+
+#nav1.active:after,
+#nav2.active:after,
+#nav3.active:after,
+#nav4.active:after{
+    transition: border-color .3s;
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: transparent;
+    border-top-color: #fbce07;
+    border-width: 15px;
+    margin-left: -15px;
+}
+
+#nav1.active:before,
+#nav2.active:before,
+#nav3.active:before,
+#nav4.active:before{
+    transition: border-color .3s;
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-color: transparent;
+    border-top-color:   black;
+    border-width: 16px;
+    margin-left: -16px;
+}
+
+nav,
+main .gourmet_main .intro,
+main .sdwch_main .intro,
+main .meal_main .intro,
+main .deserts_main .intro,
+main .sdwch_main .sdwch .f_line2 h4.spec,
+main .deserts_main .deserts .f_line .img_txt .txt_prod,
+main .deserts_main .deserts .f_line .img_txt .img_prod figure,
+main .meal_main .meal_1 .f_line .img_txt .txt_prod,
+main .meal_main .meal_1 .f_line .img_txt .img_prod figure,
+main .meal_main .meal_2 .f_line .img_txt .txt_prod,
+main .meal_main .meal_2 .f_line .img_txt .img_prod figure,
+main .gourmet_main .gourmet .f_line .img_txt .txt_prod,
+main .gourmet_main .gourmet .f_line .img_txt .img_prod figure,
+main .sdwch_main .sdwch .f_line .img_txt .txt_prod,
+main .sdwch_main .sdwch .f_line .img_prod figure,
+main .sdwch_main .sdwch .f_line2 .img_txt .txt_prod,
+main .sdwch_main .sdwch .f_line2 .img_prod figure{
+    -webkit-margin-start: 20px;
+    -webkit-margin-end: 20px;
+}
+
+main .deserts_main .deserts .f_line .img_txt .txt_prod,
+main .deserts_main .deserts .f_line .img_txt .img_prod figure img,
+main .meal_main .meal_1 .f_line .img_txt .txt_prod,
+main .meal_main .meal_1 .f_line .img_txt .img_prod figure img,
+main .meal_main .meal_2 .f_line .img_txt .txt_prod,
+main .meal_main .meal_2 .f_line .img_txt .img_prod figure img,
+main .gourmet_main .gourmet .f_line .img_txt .txt_prod,
+main .gourmet_main .gourmet .f_line .img_txt .img_prod figure img,
+main .sdwch_main .sdwch .f_line .img_txt .txt_prod,
+main .sdwch_main .sdwch .f_line .img_prod figure img,
+main .sdwch_main .sdwch .f_line2 .img_txt .txt_prod,
+main .sdwch_main .sdwch .f_line2 .img_prod figure img{
+    max-width: 22.5vw;
+}
+
+
+@media screen and (max-width: 1024px){
+    .f_line{
+        display: block;
+    }
+
+    article{
+        width: 100%;
+    }
+
+    nav a{
+        width: 100%;      
+    }
+
+    #nav1.active:after,
+    #nav2.active:after,
+    #nav3.active:after,
+    #nav4.active:after,
+    #nav1.active:before,
+    #nav2.active:before,
+    #nav3.active:before,
+    #nav4.active:before{
+        display: none;
+    }
+
+    main .deserts_main .deserts .f_line .img_txt .txt_prod,
+    main .deserts_main .deserts .f_line .img_txt .img_prod figure img,
+    main .meal_main .meal_1 .f_line .img_txt .txt_prod,
+    main .meal_main .meal_1 .f_line .img_txt .img_prod figure img,
+    main .meal_main .meal_2 .f_line .img_txt .txt_prod,
+    main .meal_main .meal_2 .f_line .img_txt .img_prod figure img,
+    main .gourmet_main .gourmet .f_line .img_txt .txt_prod,
+    main .gourmet_main .gourmet .f_line .img_txt .img_prod figure img,
+    main .sdwch_main .sdwch .f_line .img_txt .txt_prod,
+    main .sdwch_main .sdwch .f_line .img_prod figure img,
+    main .sdwch_main .sdwch .f_line2 .img_txt .txt_prod,
+    main .sdwch_main .sdwch .f_line2 .img_prod figure img{
+        max-width: 100%;
+    }
+
+    nav,
+    main .gourmet_main .intro,
+    main .sdwch_main .intro,
+    main .meal_main .intro,
+    main .deserts_main .intro,
+    main .sdwch_main .sdwch .f_line2 h4.spec,
+    main .deserts_main .deserts .f_line .img_txt .txt_prod,
+    main .deserts_main .deserts .f_line .img_txt .img_prod figure,
+    main .meal_main .meal_1 .f_line .img_txt .txt_prod,
+    main .meal_main .meal_1 .f_line .img_txt .img_prod figure,
+    main .meal_main .meal_2 .f_line .img_txt .txt_prod,
+    main .meal_main .meal_2 .f_line .img_txt .img_prod figure,
+    main .gourmet_main .gourmet .f_line .img_txt .txt_prod,
+    main .gourmet_main .gourmet .f_line .img_txt .img_prod figure,
+    main .sdwch_main .sdwch .f_line .img_txt .txt_prod,
+    main .sdwch_main .sdwch .f_line .img_prod figure,
+    main .sdwch_main .sdwch .f_line2 .img_txt .txt_prod,
+    main .sdwch_main .sdwch .f_line2 .img_prod figure{
+        -webkit-margin-start: 0;
+        -webkit-margin-end: 0;
+    }
+}
