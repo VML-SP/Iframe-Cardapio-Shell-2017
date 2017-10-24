@@ -26,5 +26,25 @@ $( document ).ready(function() {
         $(".otc").hide();
         $(".deserts_main").show();
     });
+
+    $('.smallUp').on('change', function(){
+        if(this.value == 'Cafeteria Gourmet'){            
+            $(".otc").hide();
+            $(".gourmet_main").show();
+        };
+        if(this.value == 'Sanduíches'){            
+            $(".otc").hide();
+            $(".sdwch_main").show();
+        };
+        if(this.value == 'Refeições'){            
+            $(".otc").hide();
+            $(".meal_main").show();
+        };
+        if(this.value == 'Sobremesas'){            
+            $(".otc").hide();
+            $(".deserts_main").show();
+        }
+
+    });
     
 });

@@ -59,6 +59,7 @@ nav a.active:hover,
     color: black;
 }
 
+select.smallUp,
 .out{
     display: none;
 }
@@ -152,6 +153,18 @@ main .sdwch_main .sdwch .f_line2 .img_prod figure img{
 
     nav a{
         width: 100%;      
+    }
+
+    select.smallUp{
+        display: block;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        width: 100%;
+        height: 2rem;
+    } 
+
+    nav.mediumDown{
+        display: none;
     }
 
     #nav1.active:after,
