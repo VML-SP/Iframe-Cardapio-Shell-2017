@@ -1,6 +1,8 @@
 body{
     font-family: arial;
+    color: #404040;
 }
+
 p{    
     font-size: 14px;
 }
@@ -12,7 +14,7 @@ h2{
 
 }
 
-h4{
+h3{
     font-family: arial;
 }
 
@@ -35,9 +37,9 @@ nav{
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: #404040;
     font-weight: bold;
-    border: 1px solid black;    
+    border: 1px solid #404040;    
     height: 4rem;
     width: 13rem;
     display: inline-block;
@@ -45,7 +47,11 @@ nav a{
     line-height: 4rem;
     text-align: center;
     font-size: 0.9rem;
-    position: relative;
+    position: relative;    
+}
+
+nav a:focus{
+    outline: 1px solid #404040;
 }
 
 nav a:hover{
@@ -56,7 +62,7 @@ nav a:hover{
 nav a.active:hover,
 .active{
     background-color: #fbce07;
-    color: black;
+    color: #404040;
 }
 
 select.smallUp,
@@ -122,8 +128,12 @@ main .sdwch_main .sdwch .f_line .img_txt .txt_prod,
 main .sdwch_main .sdwch .f_line .img_prod figure,
 main .sdwch_main .sdwch .f_line2 .img_txt .txt_prod,
 main .sdwch_main .sdwch .f_line2 .img_prod figure{
-    -webkit-margin-start: 20px;
+   /* -webkit-margin-start: 20px;
     -webkit-margin-end: 20px;
+    -moz-margin-start : 20px;
+    -moz-margin-end : 20px;*/
+    margin-left: 20px;
+
 }
 
 main .deserts_main .deserts .f_line .img_txt .txt_prod,
