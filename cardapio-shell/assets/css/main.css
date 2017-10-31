@@ -52,6 +52,8 @@ nav a{
 
 nav a:focus{
     outline: 1px solid #404040;
+    background-color: #404040;
+    color: #fff;
 }
 
 nav a:hover{
