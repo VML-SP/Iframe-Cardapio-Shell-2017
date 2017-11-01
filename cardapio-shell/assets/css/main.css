@@ -63,8 +63,8 @@ nav a:hover{
 
 nav a.active:hover,
 .active{
-    background-color: #fbce07;
-    color: #404040;
+    background-color: #fbce07 !important;
+    color: #404040 !important;
 }
 
 select.smallUp,
