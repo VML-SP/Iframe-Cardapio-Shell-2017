@@ -2,8 +2,11 @@ body{
     font-family: arial;
     color: #404040;
 }
-
-p{    
+main{
+  width: 80%;
+  margin: auto;
+}
+p{
     font-size: 14px;
 }
 
@@ -19,9 +22,27 @@ h3{
 }
 
 article{
-    width: 25%;
+  width: 100%;
 }
-
+article .txt_prod{
+  position: absolute;
+  top: 2rem;
+  right: 4%;
+  width: 433px;
+  background-color: #ffffff;
+  margin-left: 0 !important;
+  padding: 20px;
+}
+  article .txt_prod h3{
+    font-size: 38px;
+    margin: 0;
+    padding: 0 0 16px 0;
+  }
+  article .txt_prod p{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
 .f_line{
     display: flex;
 }
@@ -39,15 +60,15 @@ nav a{
     text-decoration: none;
     color: #404040;
     font-weight: bold;
-    border: 1px solid #404040;    
+    border: 1px solid #404040;
     height: 4rem;
-    width: 13rem;
+    width: 24%;
     display: inline-block;
     vertical-align: middle;
     line-height: 4rem;
     text-align: center;
     font-size: 0.9rem;
-    position: relative;    
+    position: relative;
 }
 
 nav a:focus{
@@ -58,7 +79,7 @@ nav a:focus{
 
 nav a:hover{
     background-color: #404040;
-    color: #fff;    
+    color: #fff;
 }
 
 nav a.active:hover,
@@ -112,50 +133,107 @@ select.smallUp,
     margin-left: -16px;
 }
 
+
+
+
 nav,
 main .gourmet_main .intro,
 main .sdwch_main .intro,
 main .meal_main .intro,
 main .deserts_main .intro,
-main .sdwch_main .sdwch .f_line2 h4.spec,
-main .deserts_main .deserts .f_line .img_txt .txt_prod,
-main .deserts_main .deserts .f_line .img_txt .img_prod figure,
-main .meal_main .meal_1 .f_line .img_txt .txt_prod,
-main .meal_main .meal_1 .f_line .img_txt .img_prod figure,
-main .meal_main .meal_2 .f_line .img_txt .txt_prod,
-main .meal_main .meal_2 .f_line .img_txt .img_prod figure,
-main .gourmet_main .gourmet .f_line .img_txt .txt_prod,
-main .gourmet_main .gourmet .f_line .img_txt .img_prod figure,
-main .sdwch_main .sdwch .f_line .img_txt .txt_prod,
-main .sdwch_main .sdwch .f_line .img_prod figure,
-main .sdwch_main .sdwch .f_line2 .img_txt .txt_prod,
-main .sdwch_main .sdwch .f_line2 .img_prod figure{
+main .deserts_main .deserts .img_txt .txt_prod,
+main .deserts_main .deserts .img_txt .img_prod figure,
+main .meal_main .meal .img_txt .txt_prod,
+main .meal_main .meal .img_txt .img_prod figure,
+main .meal_main .meal .img_txt .txt_prod,
+main .meal_main .meal .img_txt .img_prod figure,
+main .gourmet_main .gourmet .img_txt .txt_prod,
+main .gourmet_main .gourmet .img_txt .img_prod figure,
+main .sdwch_main .sdwch .img_txt .txt_prod,
+main .sdwch_main .sdwch .img_prod figure{
    /* -webkit-margin-start: 20px;
     -webkit-margin-end: 20px;
     -moz-margin-start : 20px;
     -moz-margin-end : 20px;*/
     margin-left: 20px;
-
 }
 
-main .deserts_main .deserts .f_line .img_txt .txt_prod,
-main .deserts_main .deserts .f_line .img_txt .img_prod figure img,
-main .meal_main .meal_1 .f_line .img_txt .txt_prod,
-main .meal_main .meal_1 .f_line .img_txt .img_prod figure img,
-main .meal_main .meal_2 .f_line .img_txt .txt_prod,
-main .meal_main .meal_2 .f_line .img_txt .img_prod figure img,
-main .gourmet_main .gourmet .f_line .img_txt .txt_prod,
-main .gourmet_main .gourmet .f_line .img_txt .img_prod figure img,
-main .sdwch_main .sdwch .f_line .img_txt .txt_prod,
-main .sdwch_main .sdwch .f_line .img_prod figure img,
-main .sdwch_main .sdwch .f_line2 .img_txt .txt_prod,
-main .sdwch_main .sdwch .f_line2 .img_prod figure img{
-    max-width: 22.5vw;
+main .deserts_main .deserts .img_txt .txt_prod,
+main .deserts_main .deserts .img_txt .img_prod figure img,
+main .meal_main .meal .img_txt .txt_prod,
+main .meal_main .meal .img_txt .img_prod figure img,
+main .meal_main .meal .img_txt .txt_prod,
+main .meal_main .meal .img_txt .img_prod figure img,
+main .gourmet_main .gourmet .img_txt .txt_prod,
+main .gourmet_main .gourmet .img_txt .img_prod figure img,
+main .sdwch_main .sdwch .img_txt .txt_prod,
+main .sdwch_main .sdwch .img_prod figure img{
+    /*max-width: 22.5vw;*/
+    max-width: 76vw;
 }
 
-
+main .gourmet_main .gourmet,
+main .sdwch_main .sdwch,
+main .meal_main .meal,
+main .deserts_main .deserts{
+  position: relative;
+}
+main .gourmet_main .gourmet article,
+main .sdwch_main .sdwch article,
+main .meal_main .meal article,
+main .deserts_main .deserts article{
+  display: none;
+}
+main .gourmet_main .gourmet article.act,
+main .sdwch_main .sdwch article.act,
+main .meal_main .meal article.act,
+main .deserts_main .deserts article.act{
+  display: block;
+}
+a.bt-prev,
+a.bt-next{
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+}
+a.bt-prev{
+  left: 2.5rem;
+  display: none;
+}
+a.bt-next{
+  right: 3%;
+}
+ul.blt-nav{
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 97%;
+  text-align: center;
+}
+  ul.blt-nav li{
+    display: inline-block;
+    padding: 0 1px;
+  }
+    ul.blt-nav li a{
+      display: block;
+      border: 1px solid #ffffff;
+      background-color: #ffffff;
+      text-indent: -9999px;
+      width: 20px;
+      height: 20px;
+    }
+      ul.blt-nav li.act a{
+        background-color: #dd1d21;
+      }
 @media screen and (max-width: 1024px){
-    .f_line{
+  body{
+    margin: 0;
+  }
+    main {
+      width: 100%;
+      margin: auto;
+    }
+   {
         display: block;
     }
 
@@ -164,21 +242,48 @@ main .sdwch_main .sdwch .f_line2 .img_prod figure img{
     }
 
     nav a{
-        width: 100%;      
+        width: 100%;
     }
 
     select.smallUp{
         display: block;
-        margin-bottom: 3rem;
-        margin-top: 2rem;
         width: 100%;
         height: 2rem;
-    } 
-
+        margin: 3rem 1rem 2rem 1rem;
+    }
+    section.intro{
+      padding: 0 1rem;
+    }
     nav.mediumDown{
         display: none;
     }
-
+    article .txt_prod {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 90%;
+        background-color: #f4f4f4;
+        margin-left: 0 !important;
+        padding: 20px;
+    }
+    article .txt_prod h3{
+      font-size: 28px;
+    }
+    article .txt_prod p{
+      font-size: 16px;
+    }
+    a.bt-prev,
+    a.bt-next{
+      display: none;
+      top:-9999px;
+    }
+    ul.blt-nav{
+      bottom: -4rem;
+      padding: 0 0 .5rem 0;
+    }
+    ul.blt-nav li a{
+      border: 1px solid #cccccc;
+    }
     #nav1.active:after,
     #nav2.active:after,
     #nav3.active:after,
@@ -190,18 +295,16 @@ main .sdwch_main .sdwch .f_line2 .img_prod figure img{
         display: none;
     }
 
-    main .deserts_main .deserts .f_line .img_txt .txt_prod,
-    main .deserts_main .deserts .f_line .img_txt .img_prod figure img,
-    main .meal_main .meal_1 .f_line .img_txt .txt_prod,
-    main .meal_main .meal_1 .f_line .img_txt .img_prod figure img,
-    main .meal_main .meal_2 .f_line .img_txt .txt_prod,
-    main .meal_main .meal_2 .f_line .img_txt .img_prod figure img,
-    main .gourmet_main .gourmet .f_line .img_txt .txt_prod,
-    main .gourmet_main .gourmet .f_line .img_txt .img_prod figure img,
-    main .sdwch_main .sdwch .f_line .img_txt .txt_prod,
-    main .sdwch_main .sdwch .f_line .img_prod figure img,
-    main .sdwch_main .sdwch .f_line2 .img_txt .txt_prod,
-    main .sdwch_main .sdwch .f_line2 .img_prod figure img{
+    main .deserts_main .deserts .img_txt .txt_prod,
+    main .deserts_main .deserts .img_txt .img_prod figure img,
+    main .meal_main .meal .img_txt .txt_prod,
+    main .meal_main .meal .img_txt .img_prod figure img,
+    main .meal_main .meal .img_txt .txt_prod,
+    main .meal_main .meal .img_txt .img_prod figure img,
+    main .gourmet_main .gourmet .img_txt .txt_prod,
+    main .gourmet_main .gourmet .img_txt .img_prod figure img,
+    main .sdwch_main .sdwch .img_txt .txt_prod,
+    main .sdwch_main .sdwch .img_prod figure img{
         max-width: 100%;
     }
 
@@ -210,19 +313,16 @@ main .sdwch_main .sdwch .f_line2 .img_prod figure img{
     main .sdwch_main .intro,
     main .meal_main .intro,
     main .deserts_main .intro,
-    main .sdwch_main .sdwch .f_line2 h4.spec,
-    main .deserts_main .deserts .f_line .img_txt .txt_prod,
-    main .deserts_main .deserts .f_line .img_txt .img_prod figure,
-    main .meal_main .meal_1 .f_line .img_txt .txt_prod,
-    main .meal_main .meal_1 .f_line .img_txt .img_prod figure,
-    main .meal_main .meal_2 .f_line .img_txt .txt_prod,
-    main .meal_main .meal_2 .f_line .img_txt .img_prod figure,
-    main .gourmet_main .gourmet .f_line .img_txt .txt_prod,
-    main .gourmet_main .gourmet .f_line .img_txt .img_prod figure,
-    main .sdwch_main .sdwch .f_line .img_txt .txt_prod,
-    main .sdwch_main .sdwch .f_line .img_prod figure,
-    main .sdwch_main .sdwch .f_line2 .img_txt .txt_prod,
-    main .sdwch_main .sdwch .f_line2 .img_prod figure{
+    main .deserts_main .deserts .img_txt .txt_prod,
+    main .deserts_main .deserts .img_txt .img_prod figure,
+    main .meal_main .meal .img_txt .txt_prod,
+    main .meal_main .meal .img_txt .img_prod figure,
+    main .meal_main .meal .img_txt .txt_prod,
+    main .meal_main .meal .img_txt .img_prod figure,
+    main .gourmet_main .gourmet .img_txt .txt_prod,
+    main .gourmet_main .gourmet .img_txt .img_prod figure,
+    main .sdwch_main .sdwch .img_txt .txt_prod,
+    main .sdwch_main .sdwch .img_prod figure{
         -webkit-margin-start: 0;
         -webkit-margin-end: 0;
     }
