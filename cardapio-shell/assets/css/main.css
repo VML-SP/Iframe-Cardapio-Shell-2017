@@ -21,6 +21,10 @@ h3{
     font-family: arial;
 }
 
+.intro{
+  padding-bottom: 0.7rem;
+}
+
 article{
   width: 100%;
 }
@@ -53,7 +57,7 @@ article .txt_prod{
 
 nav{
     padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 nav a{
@@ -62,7 +66,7 @@ nav a{
     font-weight: bold;
     border: 1px solid #404040;
     height: 4rem;
-    width: 24%;
+    width: 23.6%;
     display: inline-block;
     vertical-align: middle;
     line-height: 4rem;
@@ -97,6 +101,16 @@ select.smallUp,
     display: block;
 }
 
+.swiper-container {
+    width: 76vw;    
+}
+
+#nav1,
+#nav2,
+#nav3,
+#nav4{
+  margin-right: 0.5rem;
+}  
 #nav1.active:after,
 #nav2.active:after,
 #nav3.active:after,
@@ -155,7 +169,7 @@ main .sdwch_main .sdwch .img_prod figure{
     -webkit-margin-end: 20px;
     -moz-margin-start : 20px;
     -moz-margin-end : 20px;*/
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 main .deserts_main .deserts .img_txt .txt_prod,
@@ -182,7 +196,7 @@ main .gourmet_main .gourmet article,
 main .sdwch_main .sdwch article,
 main .meal_main .meal article,
 main .deserts_main .deserts article{
-  display: none;
+  /*display: none;*/
 }
 main .gourmet_main .gourmet article.act,
 main .sdwch_main .sdwch article.act,
@@ -225,6 +239,10 @@ ul.blt-nav{
       ul.blt-nav li.act a{
         background-color: #dd1d21;
       }
+    nav.mediumDown,
+    .intro{
+        margin-left: 30px !important;
+    }  
 @media screen and (max-width: 1024px){
   body{
     margin: 0;
@@ -249,10 +267,14 @@ ul.blt-nav{
         display: block;
         width: 100%;
         height: 2rem;
-        margin: 3rem 1rem 2rem 1rem;
+        margin: 3rem 1rem 2rem 0.1rem;
     }
     section.intro{
       padding: 0 1rem;
+    }
+
+    .intro {
+      margin-left: 0px !important;
     }
     nav.mediumDown{
         display: none;
@@ -272,8 +294,8 @@ ul.blt-nav{
     article .txt_prod p{
       font-size: 16px;
     }
-    a.bt-prev,
-    a.bt-next{
+    .swiper-button-prev,
+    .swiper-button-next{
       display: none;
       top:-9999px;
     }
@@ -281,6 +303,14 @@ ul.blt-nav{
       bottom: -4rem;
       padding: 0 0 .5rem 0;
     }
+    .swiper-container {
+      width: 100vw;
+      height: 30rem;
+    }
+    main .sdwch_main .sdwch ul.blt-nav {
+      bottom: -7rem;
+      padding: 0 0 .5rem 0;
+    }    
     ul.blt-nav li a{
       border: 1px solid #cccccc;
     }
