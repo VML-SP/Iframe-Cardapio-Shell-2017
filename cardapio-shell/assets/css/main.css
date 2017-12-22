@@ -75,6 +75,10 @@ nav a{
     position: relative;
 }
 
+.swiper-button-prev,
+.swiper-button-next{
+  outline: 1px solid #404040;
+}
 nav a:focus{
     outline: 1px solid #404040;
     background-color: #404040;
