@@ -222,12 +222,16 @@ a.bt-prev img.invert{
 }
 
 a.bt-next:focus img.default,
-a.bt-prev:focus img.default{
+a.bt-prev:focus img.default,
+a.bt-next:hover img.default,
+a.bt-prev:hover img.default{
   display: none;
 }
 
 a.bt-next:focus img.invert,
-a.bt-prev:focus img.invert{
+a.bt-prev:focus img.invert,
+a.bt-next:hover img.invert,
+a.bt-prev:hover img.invert{
   display: block;
 }
 
