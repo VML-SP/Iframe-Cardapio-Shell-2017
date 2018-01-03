@@ -216,6 +216,21 @@ a.bt-prev{
 a.bt-next{
   right: 3%;
 }
+a.bt-next img.invert,
+a.bt-prev img.invert{
+  display: none;
+}
+
+a.bt-next:focus img.default,
+a.bt-prev:focus img.default{
+  display: none;
+}
+
+a.bt-next:focus img.invert,
+a.bt-prev:focus img.invert{
+  display: block;
+}
+
 ul.blt-nav{
   position: absolute;
   bottom: 1rem;
@@ -238,6 +253,7 @@ ul.blt-nav{
       ul.blt-nav li.act a{
         background-color: #dd1d21;
       }
+
 @media screen and (max-width: 1024px){
   body{
     margin: 0;
