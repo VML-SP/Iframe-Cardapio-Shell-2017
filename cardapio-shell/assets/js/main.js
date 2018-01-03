@@ -6,7 +6,28 @@ $(document).ready(function () {
         $(".otc").hide();
         $(".gourmet_main").show();
         startCarousel('gourmet');
-    });
+        var mySwiper = new Swiper('.s-gourmet', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+
+            /* // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            }, */
+        });
+    });    
 
     $("#nav2").click(function () {
         $("nav").find(".nout").removeClass("active");
@@ -14,6 +35,27 @@ $(document).ready(function () {
         $(".otc").hide();
         $(".sdwch_main").show();
         startCarousel('sdwch');
+        var mySwiper = new Swiper('.s-sdwch', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+
+            /* // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            }, */
+        });
     });
 
     $("#nav3").click(function () {
@@ -22,6 +64,27 @@ $(document).ready(function () {
         $(".otc").hide();
         $(".meal_main").show();
         startCarousel('meal');
+        var mySwiper = new Swiper('.s-meal', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+
+            /* // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            }, */
+        });
     });
 
     $("#nav4").click(function () {
@@ -30,30 +93,44 @@ $(document).ready(function () {
         $(".otc").hide();
         $(".deserts_main").show();
         startCarousel('deserts');
+        var mySwiper = new Swiper('.s-deserts', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+
+            /* // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            }, */
+        });
     });
 
     $('.smallUp').on('change', function () {
         if (this.value == 'Cafeteria Gourmet') {
-            $(".otc").hide();
-            $(".gourmet_main").show();
-            startCarousel('gourmet');
+            $("#nav1").trigger("click");
         };
         if (this.value == 'Sanduíches') {
-            $(".otc").hide();
-            $(".sdwch_main").show();
-            startCarousel('sdwch');
+            $("#nav2").trigger("click");
         };
         if (this.value == 'Refeições') {
-            $(".otc").hide();
-            $(".meal_main").show();
-            startCarousel('meal');
+            $("#nav3").trigger("click");
         };
         if (this.value == 'Sobremesas') {
-            $(".otc").hide();
-            $(".deserts_main").show();
-            startCarousel('deserts');
+            $("#nav4").trigger("click");
         }
     });
+    $("#nav1").trigger("click");
 
     var quem, quant, qual = 0;
     $('.bt-prev').click(function (e) {
@@ -79,7 +156,7 @@ $(document).ready(function () {
         }
     });
     function startCarousel(who) {
-        quant = $("." + who + " article").length;
+        quant = $(".mainDesktop ." + who + " article").length;
         quem = who;
         qual = 0;
         $('.blt-nav li').remove();
