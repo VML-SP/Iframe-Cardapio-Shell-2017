@@ -162,7 +162,7 @@ $(document).ready(function () {
         $('.blt-nav li').remove();
         $('.bt-prev').hide();
         for (var i = 0; i < quant; i++) {
-            $('.' + quem + ' .blt-nav').append('<li><a href="javascript:;" class="blt-car">' + 'imagem' + i + '</a></li>');
+            $('.' + quem + ' .blt-nav').append('<li><a href="javascript:;" class="blt-car">' + i + '</a></li>');
         }
         $('.' + quem + ' .blt-nav li').first().addClass('act');
 
