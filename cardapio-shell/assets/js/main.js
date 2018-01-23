@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $("#nav1").click(function () {
-        $("nav").find(".nout").removeClass("active");
+        $(".nout").removeClass("active");
         $("#nav1").addClass("active");
         $(".otc").hide();
         $(".gourmet_main").show();
@@ -30,7 +30,7 @@ $(document).ready(function () {
     });    
 
     $("#nav2").click(function () {
-        $("nav").find(".nout").removeClass("active");
+        $(".nout").removeClass("active");
         $("#nav2").addClass("active");
         $(".otc").hide();
         $(".sdwch_main").show();
@@ -59,7 +59,7 @@ $(document).ready(function () {
     });
 
     $("#nav3").click(function () {
-        $("nav").find(".nout").removeClass("active");
+        $(".nout").removeClass("active");
         $("#nav3").addClass("active");
         $(".otc").hide();
         $(".meal_main").show();
@@ -88,7 +88,7 @@ $(document).ready(function () {
     });
 
     $("#nav4").click(function () {
-        $("nav").find(".nout").removeClass("active");
+        $(".nout").removeClass("active");
         $("#nav4").addClass("active");
         $(".otc").hide();
         $(".deserts_main").show();
