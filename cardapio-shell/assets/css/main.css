@@ -318,7 +318,7 @@ ul.blt-nav{
         margin: 3rem 1rem 2rem 0rem;
     }
     section.intro{
-      padding: 7rem 1rem 0 1rem;      
+      padding: 0 1rem 0 1rem;      
     }
     nav.mediumDown{
         display: none;
@@ -366,6 +366,13 @@ ul.blt-nav{
     #nav3.active:before,
     #nav4.active:before{
         display: none;
+    }
+
+    .gourmet_main,
+    .sdwch_main,
+    .meal_main,
+    .deserts_main{
+      padding-top: 0;
     }
     .mainMobile .deserts_main .deserts .img_txt .txt_prod,
     .mainMobile .deserts_main .deserts .img_txt .img_prod figure img,
