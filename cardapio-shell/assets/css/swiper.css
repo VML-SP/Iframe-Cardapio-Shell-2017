@@ -167,6 +167,7 @@
   background-size: 60px 60px;
   background-position: center;
   background-repeat: no-repeat;
+  display: none;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {

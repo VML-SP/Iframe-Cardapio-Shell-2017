@@ -6,13 +6,15 @@ body{
     display: block;
   }
   
-  .mainMobile{
-    display: none;
-  }
+.mainMobile{
+  display: none;
+}
+
 .mainDesktop{
   width: 80%;
   margin: auto;
 }
+
 p{
     font-size: 14px;
 }
@@ -62,38 +64,34 @@ article .txt_prod{
     padding-top: 1rem;
 }
 
-nav{
+/* nav{
     padding-top: 2rem;
     padding-bottom: 3rem;
-}
+} */
 
-nav a{
-    text-decoration: none;
+button{   
     color: #404040;
     font-weight: bold;
-    border: 1px solid #404040;
-    height: 4rem;
-    width: 24%;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 4rem;
-    text-align: center;
+    border: 1px solid #404040;  
+    width: 18.2vw;
     font-size: 0.9rem;
-    position: relative;
+    position: absolute;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-nav a:focus{
+button:focus{
     outline: 1px solid #404040;
     background-color: #404040;
     color: #fff;
 }
 
-nav a:hover{
+button:hover{
     background-color: #404040;
     color: #fff;
 }
 
-nav a.active:hover,
+button.active:hover,
 .active{
     background-color: #fbce07 !important;
     color: #404040 !important;
@@ -111,6 +109,27 @@ select.smallUp,
 .swiper-container {
     width: 76vw;
     height: 60rem;
+}
+
+#nav1{
+  position: absolute;
+  top: 5rem;
+}
+#nav2{
+  position: absolute;
+  top: 5rem;
+  left: 29.6vw;
+}
+#nav3{
+  position: absolute;
+  top: 5rem;
+  left: 48.8vw;
+}
+
+#nav4{
+  position: absolute;
+  top: 5rem;
+  left: 68.1vw;
 }
 
 #nav1.active:after,
@@ -149,10 +168,14 @@ select.smallUp,
     margin-left: -16px;
 }
 
+.gourmet_main,
+.sdwch_main,
+.meal_main,
+.deserts_main{
+  padding-top: 7rem;
+}
 
-
-
-nav,
+button,
 .mainDesktop .gourmet_main .intro,
 .mainDesktop .sdwch_main .intro,
 .mainDesktop .meal_main .intro,
@@ -294,7 +317,7 @@ ul.blt-nav{
         margin: 3rem 1rem 2rem 0rem;
     }
     section.intro{
-      padding: 0 1rem;
+      padding: 7rem 1rem 0 1rem;      
     }
     nav.mediumDown{
         display: none;
