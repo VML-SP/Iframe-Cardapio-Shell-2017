@@ -141,7 +141,7 @@ $(document).ready(function () {
         $('.' + quem + '_main .blt-nav li:eq(' + qual + ')').addClass('act');
         var art = $('.' + quem + ' article.img_txt:eq(' + qual + ')').addClass('act');
         var section = art.closest('section');
-        section[0].scrollTo(art[0].offsetLeft, 0);
+        section[0].scrollLeft = art[0].offsetLeft;
         if (qual == 0) {
             $(this).hide();
         }
@@ -154,7 +154,7 @@ $(document).ready(function () {
         $('.' + quem + '_main .blt-nav li:eq(' + qual + ')').addClass('act');
         var art = $('.' + quem + ' article.img_txt:eq(' + qual + ')').addClass('act');
         var section = art.closest('section');
-        section[0].scrollTo(art[0].offsetLeft, 0);
+        section[0].scrollLeft = art[0].offsetLeft;
         if (qual == (quant - 1)) {
             $(this).hide();
         }
@@ -166,7 +166,7 @@ $(document).ready(function () {
         $('.' + quem + '_main .blt-nav li:eq(' + qual + ')').addClass('act');
         var art = $('.' + quem + ' article.img_txt:eq(' + qual + ')').addClass('act');       
         var section = art.closest('section');
-        section[0].scrollTo(art[0].offsetLeft, 0);
+        section[0].scrollLeft = art[0].offsetLeft;
 
         $('.bt-next').show();
         $('.bt-prev').show();
@@ -187,7 +187,7 @@ $(document).ready(function () {
             $('.' + quem + '_main .blt-nav').append('<li><a tabindex="-1" href="javascript:;" class="blt-car">' + i + '</a></li>');
         }
         $('.' + quem + '_main .blt-nav li').first().addClass('act');
-        $('.' + quem + '')[0].scrollTo(0,0);
+        $('.' + quem + '')[0].scrollLeft = 0;
 
         $('.blt-car').click(function (e) {
             e.preventDefault();
@@ -196,7 +196,7 @@ $(document).ready(function () {
             $('.' + quem + '_main .blt-nav li:eq(' + qual + ')').addClass('act');
             var art = $('.' + quem + ' article.img_txt:eq(' + qual + ')').addClass('act');
             var section = art.closest('section');
-            section[0].scrollTo(art[0].offsetLeft, 0);
+            section[0].scrollLeft = art[0].offsetLeft;
 
             $('.bt-next').show();
             $('.bt-prev').show();
