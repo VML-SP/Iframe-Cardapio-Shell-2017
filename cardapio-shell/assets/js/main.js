@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $("#nav1").click(function () {
+    $("#nav1").click(function () {       
         $(".nout").removeClass("active");
         $("#nav1").addClass("active");
         $(".otc").hide();
@@ -164,7 +164,7 @@ $(document).ready(function () {
         qual = $(this).closest('article.img_txt').index();
         $('.' + quem + '_main .act').removeClass('act');
         $('.' + quem + '_main .blt-nav li:eq(' + qual + ')').addClass('act');
-        var art = $('.' + quem + ' article.img_txt:eq(' + qual + ')').addClass('act');
+        var art = $('.' + quem + ' article.img_txt:eq(' + qual + ')').addClass('act');       
         var section = art.closest('section');
         section[0].scrollTo(art[0].offsetLeft, 0);
 
@@ -187,6 +187,7 @@ $(document).ready(function () {
             $('.' + quem + '_main .blt-nav').append('<li><a tabindex="-1" href="javascript:;" class="blt-car">' + i + '</a></li>');
         }
         $('.' + quem + '_main .blt-nav li').first().addClass('act');
+        $('.' + quem + '')[0].scrollTo(0,0);
 
         $('.blt-car').click(function (e) {
             e.preventDefault();
