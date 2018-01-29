@@ -217,32 +217,34 @@ button,
 .mainDesktop .meal_main .meal,
 .mainDesktop .deserts_main .deserts{
   position: relative;
+  display: flex;
+  overflow: hidden;
   /* text-align: center; */
 }
 .mainDesktop .gourmet_main .gourmet article,
 .mainDesktop .sdwch_main .sdwch article,
 .mainDesktop .meal_main .meal article,
 .mainDesktop .deserts_main .deserts article{
-  display: none;
+  position: relative;
 }
-.mainDesktop .gourmet_main .gourmet article.act,
+/*.mainDesktop .gourmet_main .gourmet article.act,
 .mainDesktop .sdwch_main .sdwch article.act,
 .mainDesktop .meal_main .meal article.act,
 .mainDesktop .deserts_main .deserts article.act{
   display: block;
-}
+} */
 a.bt-prev,
 a.bt-next{
   position: absolute;
-  top: 45%;
+  top: 85%;
   z-index: 10;
 }
 a.bt-prev{
-  left: 2.5rem;
+  left: 14.3%;
   display: none;
 }
 a.bt-next{
-  right: 3%;
+  right: 13.6%;
 }
 a.bt-next img.invert,
 a.bt-prev img.invert{
@@ -266,6 +268,7 @@ a.bt-prev:hover img.invert{
 ul.blt-nav{
   position: absolute;
   bottom: 1rem;
+  top: 53rem;
   left: 0;
   width: 97%;
   text-align: center;
