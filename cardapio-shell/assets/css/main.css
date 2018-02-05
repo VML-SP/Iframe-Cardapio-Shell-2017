@@ -236,7 +236,7 @@ button,
 a.bt-prev,
 a.bt-next{
   position: absolute;
-  top: 85%;
+  top: 35rem;
   z-index: 10;
 }
 a.bt-prev{
